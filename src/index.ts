@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(requestLogger);
 
-const baseURL = "/relay/api/v1";
+const baseURL = "/hospital-management/api/v1";
 
 // Swagger UI
 app.use(`${baseURL}/docs`, swaggerUi.serve, swaggerUi.setup(swaggerSpec));

@@ -4,16 +4,16 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Relay Server API",
+      title: "Hospital Management Server API",
       version: "1.0.0",
-      description: "REST API documentation for Relay Server",
+      description: "REST API documentation for Hosptal Management Server",
       contact: {
-        name: "Jen Thomas James",
+        name: "Bipin Kumar",
       },
     },
     servers: [
       {
-        url: "http://localhost:8080/relay/api/v1",
+        url: "http://localhost:8080/hospital-management/api/v1",
         description: "Development server",
       },
     ],

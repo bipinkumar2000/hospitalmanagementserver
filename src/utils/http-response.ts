@@ -2,6 +2,7 @@ import type { Response } from "express";
 import HttpResponse from "../types/HttpResponse.interface";
 import HttpError from "../types/HttpError.interface";
 import z from "zod";
+import logger from "./logger";
 
 export function sendSuccess<T>(
   res: Response,
@@ -18,9 +19,11 @@ export function sendError(
   res: Response,
   message: string = "INTERNAL_SERVER_ERROR",
   code?: string | number,
-  statusCode = 400,
+  statusCode = 500,
   details?: string | z.ZodError,
 ) {
+  logger.error(`RES: ${res}`);
+
   const response: HttpError = {
     status: "error",
     error: { message, code, details },
