@@ -1,0 +1,19 @@
+{
+  "name": "hospital-management-server",
+  "version": "1.0.0",
+  "description": "API server for managing a hospital",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bipinkumar2000/hospitalmanagementserver.git"
+  },
+  "author": "Jen Thomas James, Bipin Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipinkumar2000/hospitalmanagementserver/issues"
+  },
+  "homepage": "https://github.com/bipinkumar2000/hospitalmanagementserver#readme"
+}
