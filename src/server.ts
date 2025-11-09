@@ -10,6 +10,7 @@ const port = process.env.PORT || 8080;
   try {
     app.listen(port, async () => {
       await sequelize.authenticate();
+      await sequelize.sync();
       logger.info(`Started application on port ${port}`);
       logger.info(
         `Visit http://localhost:8080/hospital-management/api/v1/docs/ for API documentation`,
